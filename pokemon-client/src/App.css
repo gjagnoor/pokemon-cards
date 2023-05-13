@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app-heading {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 100px;
+}
+
+
