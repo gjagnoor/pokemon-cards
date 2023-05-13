@@ -10,10 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pokemoncards")
+@RequestMapping("/api")
 public class PokemonController {
     @Autowired
     private PokemonService pokemonService;
+
+    @GetMapping("/pokemons")
+    public List<PokemonModel> getPokemonsFromDB() {
+        return pokemonService.getPokemonsFromDB();
+    }
 
     @GetMapping("/populate")
     public List<PokemonModel> getPokemonList() {
