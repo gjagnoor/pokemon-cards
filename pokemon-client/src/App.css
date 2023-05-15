@@ -18,4 +18,9 @@
     font-size: 100px;
 }
 
+#home-btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
 

@@ -12,8 +12,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class PokemonController {
-    @Autowired
+
     private PokemonService pokemonService;
+
+    @Autowired
+    public PokemonController (PokemonService pokemonService) {
+        this.pokemonService = pokemonService;
+    }
 
     @GetMapping("/pokemons")
     public List<PokemonModel> getPokemonsFromDB() {

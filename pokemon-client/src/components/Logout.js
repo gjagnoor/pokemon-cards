@@ -9,7 +9,7 @@ const Logout = () => {
 	}
 	return (
 		<>
-			<Button id="loginSignup-btn" type="button" onClick={handleClick} large={true} intent="warning">Sign Out</Button>
+			<Button id="loginSignup-btn" type="button" onClick={handleClick} large={true} intent="danger">Sign Out</Button>
 		</>
 	)
 }

@@ -14,7 +14,4 @@ public class GameModel {
     ScoreModel score;
 
     Boolean completed;
-
-
-
 }

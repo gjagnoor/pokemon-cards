@@ -17,5 +17,4 @@ public interface PokemonMapper {
     @Insert("INSERT INTO pokemon (name, url) VALUES (#{name}, #{url})")
     void populatePokemonTableWithAPIResults(PokemonModel pokemon);
 
-
 }

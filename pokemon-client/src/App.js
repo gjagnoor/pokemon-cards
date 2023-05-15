@@ -21,7 +21,6 @@ function App() {
 			}
 		});
 	}, []);
-
 	const handleClick = () => {
 		signInWithPopup(auth, provider).then((data) => {
 			setUser(data.user);
